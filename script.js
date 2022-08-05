@@ -31,13 +31,6 @@ class Explosion {
 }
 
 window.addEventListener('click', (e) => {
-    ctx.fillRect(e.clientX, e.clientY, e.clientX + 100, e.clientY + 100);
-    ctx.drawImage(this.image, this.x, this.y, this.width * this.frame, this.height * this.frame, this.CANVAS_WIDTH, this.CANVAS_HEIGHT, this.image.src);
+    
 
-})
-
-windows.addEventListener('load', () => {
-    const explo = new Explosion(x, y);
-    explo.draw();
-    explo.update();
 })
